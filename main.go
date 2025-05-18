@@ -13,7 +13,7 @@ func main() {
 	}
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello from Go! 🌐 Host: %s\n", os.Getenv("HOSTNAME"))
+		fmt.Fprintf(w, "Hello from Go 1! 🌐 Host: %s\n", os.Getenv("HOSTNAME"))
 	})
 
 	fmt.Println("Server running on port", port)
